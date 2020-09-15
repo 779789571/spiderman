@@ -34,7 +34,6 @@ class spiderMan(object):
             self.runMod == ['bing_spider']
             print('bing搜索暂未完成')
         #返回[(url,title)]格式的列表
-        #todo 统计重复个数有问题
         # print('重复域名共'+str(duplicate_site)+'个')
         return search_result
 
@@ -76,6 +75,7 @@ class spiderMan(object):
 
 
 if __name__ == '__main__':
-    # fire.Fire(spiderMan)
-    #关键词：刷赞网、刷钻网、代刷平台、24小时自助代刷平台、QQ代刷网、低价QQ刷钻、卡盟刷钻平台
-    spiderMan('intitle:卡盟刷钻平台').run()
+    fire.Fire(spiderMan)
+    #关键词：刷赞网、刷钻网、代刷平台、24小时自助代刷平台、QQ 代刷网、低价QQ刷钻、免费QQ刷赞网\低价名片赞
+    #spiderMan('intitle:刷赞网').run()
+
